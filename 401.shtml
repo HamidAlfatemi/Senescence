@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<title>senescence.info - sorry, you need authorization to visit this page</title>
+</head>
+
+<body bgColor=#ffffff>
+
+<a href="http://www.senescence.info">senescence.info</a>
+
+<div align="center"><h1>Sorry, you need authorization to visit this page (error 401)</h1>
+
+<hr width="80%" size="1" noshade></div>
+
+<p align="justify">You do not have authorization to visit the requested URL (http://www.senescence.info<!--#echo var="REQUEST_URI" -->). Please re-check your username and password. Your error has been logged and the server administrator informed. Your IP: <strong><!--#echo var="REMOTE_ADDR" --></strong></p>
+
+<p align="justify">I apologize for any inconvenience.</p>
+
+<form action="http://www.senescence.info/cgi-sys/entropysearch.cgi">
+<input type="submit" value="Search senescence.info" style="font-style:normal; font-size:12px; color:black; background-color:white; border-width:1px; border-color:rgb(102,102,102); border-style:solid;">
+<input type="text" name="query" size="50" maxlength="50" style="font-style:normal; font-size:12px; color:black; background-color:white; border-width:1px; border-color:rgb(102,102,102); border-style:solid;" value="">
+<input type="hidden" name="basehref" value="http://www.senescence.info/">
+<input type="hidden" name="template" value="default">
+<input type="hidden" name="user" value="tzpvuvwy">
+</form>
+
+<div align="center"><hr width="80%" size="1" noshade>
+
+<p><a href="index.html">Index of senescence.info</a></p></div>
+
+<p>Suggestions, ideas, and all types of criticisms are welcome. Please <a href="http://jp.senescence.info/contact.php">contact me</a>.</p>
+
+<p>Copyright &#169 2004, 2005 by <a href="http://jp.senescence.info">Jo&#227o Pedro de Magalh&#227es</a>. All rights reserved.</p>
+
+</body>
+</html>

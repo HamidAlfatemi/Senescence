@@ -1,0 +1,225 @@
+.normaltext {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+	padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0; /* 1%; */
+    line-height: 1.8;
+    font-weight: 750;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3, h4 {
+    font-size: 1.25rem;
+}
+
+h5, h6 {
+    font-size: 1.1rem;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sticky Header */
+.mainheader {
+    position: sticky;
+	top: 0;
+    background-color: #E6EBF0;
+    color: #000000;
+    z-index: 1000;
+    padding: 0px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #000000;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600; /* Semi-bold */
+}
+
+/* Change the color of the 'Home' menu item */
+.menu > li:first-child > a {
+    color: blue; /* Change 'Home' to blue */
+}
+
+/* Change font color on hover for other menu items */
+.menu li a:hover {
+    color: #0056B3; /* Change to desired color when hovered */
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+    background-color: #DDEBF7;
+    list-style: none;
+    /* min-width: 100%; /* Ensure submenu is at least as wide as the parent */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap; /* Prevent wrapping */
+    z-index: 9999;
+    /*left: 100%; /* Default: appear to the right of the parent menu */
+}
+
+/* Ensure submenu doesn't go out of screen */
+.menu li:hover > .submenu {
+    display: block;
+    left: 0;
+    right: auto; /* Default position */
+}
+
+.submenu li a {
+    padding: 5px;
+	white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Move the fifth submenu to the left */
+.menu li:nth-child(5) .submenu {
+    left: -50%; /* Adjust this value as needed */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    margin: 0;
+	padding: 0;
+}
+
+/* Full-Width Image */
+.image-section {
+    width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Explanation Paragraph */
+.explanation {
+    background-color: #D9E1F2;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.25rem; /* Adjust the value as needed */
+    line-height: 1.6; /* Optional: Adjust line spacing for readability */
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.explanation2 {
+    background-color: #00bbff !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+	position: relative !important;
+    width: 100% !important;
+}
+
+.content-section {
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    font-size: 1.1rem; /* Adjust the value as needed */
+    line-height: 3; /* Optional: Adjust line spacing for readability */
+	font-weight: 600;
+	margin-top: 0;
+}
+
+.content-section .sectheader {
+    padding: 10px;
+	background-color: #D9E1F2;
+	font-size: 3;
+	font-weight: 600;
+	margin-bottom: 0px;
+	color: #0000bb;
+}
+
+.hmitem {
+	color: #0000bb;
+
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+    }
+
+    .navbar.active .menu {
+        display: flex;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    .submenu {
+        position: relative;
+    }
+}

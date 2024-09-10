@@ -1,0 +1,81 @@
+.ddm1 {
+    font: 11px tahoma;
+}
+.ddm1 .item1,
+.ddm1 .item1:hover,
+.ddm1 .item1-active,
+.ddm1 .item1-active:hover {
+    padding: 3px 10px 4px 10px;
+    border: 0px;
+    border-style: solid none solid none;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+.ddm1 .item1 {
+    background: #000000;
+    color: #ffffff;
+}
+.ddm1 .item1:hover,
+.ddm1 .item1-active,
+.ddm1 .item1-active:hover {
+    background: #888888;
+    color: #ffffff;
+}
+.ddm1 .item2,
+.ddm1 .item2:hover {
+    padding: 3px 8px 4px 8px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+.ddm1 .item2 {
+    background: #3264C7;
+    color: #ffffff;
+}
+.ddm1 .item2:hover {
+    background: #6699FF;
+    color: #ffffff;
+}
+.ddm1 .item3,
+.ddm1 .item3:hover {
+    padding: 3px 8px 4px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+.ddm1 .item3 {
+    background: #3264C7;
+    color: #ffffff;
+}
+.ddm1 .item3:hover {
+    background: #6699FF;
+    color: #ffffff;
+}
+.ddm1 .item4,
+.ddm1 .item4:hover {
+    padding: 3px 8px 4px 32px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+.ddm1 .item4 {
+    background: #3264C7;
+    color: #ffffff;
+}
+.ddm1 .item4:hover {
+    background: #6699FF;
+    color: #ffffff;
+}
+.ddm1 .section {
+    border: 1px #003366;
+    border-style: solid solid solid solid;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    white-space: nowrap;
+}
+.ddm1 .left, .ddm1 .left:hover { border-style: solid none solid solid; }
+.ddm1 .right, .ddm1 .right:hover { border-style: solid solid solid none; }
+
+* html .ddm1 td { position: relative; } /* ie 5.0 fix */
