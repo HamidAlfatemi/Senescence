@@ -73,6 +73,9 @@ body {
 .menu {
     list-style: none;
     display: flex;
+    flex-direction: row; /* This makes the menu items horizontal by default */
+    padding: 0;
+    margin: 0;
 }
 
 .menu li {
@@ -188,25 +191,60 @@ body {
     .menu {
         display: none;
         flex-direction: column;
+        position: absolute;
+        top: 100%; /* Make it appear below the header */
+        left: 0;
+        width: 100%; /* Full width for dropdown */
+        background-color: #E6EBF0; /* Background color for dropdown */
+        padding: 10px 0;
+        z-index: 1000; /* Ensure it stays above other elements */
     }
 
     .navbar.active .menu {
         display: flex;
     }
 
-    .hamburger {
-        display: block;
-        color: white;
+    .menu li {
+        width: 100%; /* Make each item take full width */
     }
 
-    .menu li {
+    .menu li a {
+        padding: 10px 20px; /* Add padding for better touch experience */
+        text-align: left;
+        color: #000000;
         display: block;
-        padding: 10px;
+        font-weight: 600;
     }
 
     .submenu {
-        position: relative;
+        display: none; /* Hide submenus by default */
     }
+
+    .menu li:hover > .submenu {
+        display: block;
+        position: relative; /* Show the submenu when hovering on a menu item */
+        left: 0;
+        padding-left: 20px;
+        background-color: #DDEBF7;
+    }
+
+    .submenu li a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+    .hamburger {
+        display: block;
+         cursor: pointer;
+    }
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
 }
 
 .content-section {
