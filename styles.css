@@ -133,6 +133,7 @@ body {
 
 .hamburger {
     display: none;
+	font-size: 30px;
     cursor: pointer;
 }
 
@@ -189,17 +190,18 @@ body {
         flex-direction: column;
     }
 
+    .navbar.active .menu {
+        display: flex;
+    }
+
     .hamburger {
         display: block;
         color: white;
     }
 
-    .navbar.active .menu {
-        display: flex;
-    }
-
     .menu li {
         display: block;
+        padding: 10px;
     }
 
     .submenu {
