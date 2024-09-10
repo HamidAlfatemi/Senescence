@@ -169,10 +169,9 @@ body {
 
 .explanation2 {
     background-color: #00bbff !important;
+    padding: 20px 10px !important;
     color: #ffffff !important;
-    text-align: center !important;
-    padding: 20px 0 !important;
-	position: relative !important;
+    text-align: left !important;
     width: 100% !important;
 }
 
