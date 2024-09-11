@@ -202,7 +202,7 @@ body {
         top: 50px; /* Adjust as needed */
         right: 0;
         width: 100%;
-        background-color: #333; /* Color for mobile menu */
+        background-color: #77aaff; /* Color for mobile menu */
         z-index: 9999;
     }
 
@@ -229,7 +229,7 @@ body {
         padding: 10px 20px;
         text-align: left;
         color: white;
-        background-color: #444; /* Background color for mobile items */
+        background-color: #99ccff; /* Background color for mobile items */
 		display: block;
         font-weight: 600;
     }
