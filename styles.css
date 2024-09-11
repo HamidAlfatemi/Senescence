@@ -52,6 +52,7 @@ body {
     color: #000000;
     z-index: 1000;
     padding: 0px 0;
+    height: 45px;
 }
 
 .container {
@@ -191,7 +192,7 @@ body {
     .hamburger {
         display: block;
         position: absolute;
-        top: 5px;
+        top: 15px;
         right: 20px;
         z-index: 1000;        
     }
