@@ -237,7 +237,7 @@ body {
     .submenu {
         display: none; /* Hide submenus by default */
         /*position: static;*/
-        background-color: #555; /* Submenu background for mobile */
+        background-color: #77aaff; /* Submenu background for mobile */
         /*width: 100%;*/
     }
 
@@ -249,7 +249,7 @@ body {
 
     .submenu li a {
         padding: 10px;
-        background-color: #666;
+        background-color: #99ccff;
     }
 
     .hamburger span {
